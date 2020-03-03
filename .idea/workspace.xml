@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5c673f9a-257a-4eef-b696-dfb120845d69" name="Default Changelist" comment="" />
+    <list default="true" id="5c673f9a-257a-4eef-b696-dfb120845d69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/use/emotionclass/emotiondemo/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +17,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1XhXRDOvTpUig3rJOcBkaWQ3r51" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -24,18 +30,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Basic/pachong" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/use/emotionclass/emotiondemo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\use\emotionclass\emotiondemo" />
       <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\Basic\pachong" />
       <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\Basic\others\jsonjson" />
       <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\use\emotionclass" />
       <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\Pandaspd\data" />
-      <recent name="E:\Workplace\Workplace_Python\wp_project\homework_erClassification\testdata" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\Basic\others" />
@@ -245,9 +251,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="510" y="54" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1582878327383" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583056068164">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1583213739297">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583056068164" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1583213739297" />
   </component>
 </project>
