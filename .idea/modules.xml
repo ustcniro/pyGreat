@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../MLearning/.idea/MLearning.iml" filepath="$PROJECT_DIR$/../../MLearning/.idea/MLearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Project1/.idea/Project1.iml" filepath="$PROJECT_DIR$/../Project1/.idea/Project1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../Text-Classification-Application-master/.idea/Text-Classification-Application-master.iml" filepath="$PROJECT_DIR$/../../Text-Classification-Application-master/.idea/Text-Classification-Application-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../wp1/erClassification/.idea/erClassification.iml" filepath="$PROJECT_DIR$/../../wp1/erClassification/.idea/erClassification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../homework_erClassification/.idea/homework_erClassification.iml" filepath="$PROJECT_DIR$/../homework_erClassification/.idea/homework_erClassification.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../kaggle-word2vec/.idea/kaggle-word2vec.iml" filepath="$PROJECT_DIR$/../../kaggle-word2vec/.idea/kaggle-word2vec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../machineL/.idea/machineL.iml" filepath="$PROJECT_DIR$/../../machineL/.idea/machineL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../wp1/pachong/.idea/pachong.iml" filepath="$PROJECT_DIR$/../../wp1/pachong/.idea/pachong.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pyGreat.iml" filepath="$PROJECT_DIR$/.idea/pyGreat.iml" />
+    </modules>
+  </component>
+</project>
