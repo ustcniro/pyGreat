@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c673f9a-257a-4eef-b696-dfb120845d69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/use/emotionclass/emotiondemo/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/knowledges/t08copy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/pachong/t04proxy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/pachong/t05cookies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/pachong/t06download.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/pachong/tt02testvisitv2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t07nnquick_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t14DQN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/others/plot.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/pachong/tt02testvisit.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/pachong/tt02testvisit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/pachong/zztesttest.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/pachong/zztesttest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/Deep_pytorch/t14gan.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t15gan.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,18 +40,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/use/emotionclass/emotiondemo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tools/Deep_pytorch" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\use\emotionclass\emotiondemo" />
+      <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\tools\Deep_pytorch" />
       <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\Basic\pachong" />
+      <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\use\emotionclass\emotiondemo" />
       <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\Basic\others\jsonjson" />
       <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\use\emotionclass" />
-      <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\Pandaspd\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\Basic\others" />
@@ -50,8 +60,8 @@
       <recent name="E:\Workplace\Workplace_Python\wp_project\homework_erClassification\testtest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.tt01statistics">
-    <configuration name="t02bs4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.t08copy">
+    <configuration name="t04proxy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyGreat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,7 +73,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/pachong/t02bs4.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/pachong/t04proxy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -72,7 +82,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="t0xregular" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="t08copy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyGreat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,28 +94,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/knowledges/t0xregular.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tt01statistics" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pyGreat" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Basic/pachong" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/pachong/tt01statistics.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/knowledges/t08copy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,6 +116,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/pachong/tt02testvisit.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="tt02testvisitv2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pyGreat" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Basic/pachong" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/pachong/tt02testvisitv2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,10 +168,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.tt01statistics" />
-        <item itemvalue="Python.t0xregular" />
+        <item itemvalue="Python.t08copy" />
         <item itemvalue="Python.tt02testvisit" />
-        <item itemvalue="Python.t02bs4" />
+        <item itemvalue="Python.t04proxy" />
+        <item itemvalue="Python.tt02testvisitv2" />
         <item itemvalue="Python.zztesttest" />
       </list>
     </recent_temporary>
@@ -203,26 +213,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="472" y="215" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1582698687479" />
-    <state x="754" y="152" key="FileChooserDialogImpl" timestamp="1583024542018">
+    <state x="754" y="152" key="FileChooserDialogImpl" timestamp="1583219403638">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="754" y="152" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583024542018" />
-    <state width="1515" height="272" key="GridCell.Tab.0.bottom" timestamp="1583146737608">
+    <state x="754" y="152" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583219403638" />
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom" timestamp="1583299508572">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="272" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583146737608" />
-    <state width="1515" height="272" key="GridCell.Tab.0.center" timestamp="1583146737608">
+    <state width="1515" height="213" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583299508572" />
+    <state width="1515" height="213" key="GridCell.Tab.0.center" timestamp="1583299508571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="272" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583146737608" />
-    <state width="1515" height="272" key="GridCell.Tab.0.left" timestamp="1583146737608">
+    <state width="1515" height="213" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583299508571" />
+    <state width="1515" height="213" key="GridCell.Tab.0.left" timestamp="1583299508571">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="272" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583146737608" />
-    <state width="1515" height="272" key="GridCell.Tab.0.right" timestamp="1583146737608">
+    <state width="1515" height="213" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583299508571" />
+    <state width="1515" height="213" key="GridCell.Tab.0.right" timestamp="1583299508572">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="272" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583146737608" />
+    <state width="1515" height="213" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583299508572" />
     <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1583022033373">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
