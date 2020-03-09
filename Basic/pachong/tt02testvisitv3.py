@@ -1,12 +1,21 @@
 # 将某用户的CSDN所有博客访问一遍
+# 通过代理proxy
 import requests
 from bs4 import BeautifulSoup  # 解析html网页的
 import re
+import json
 
+def getaPageData(url):
+    res = requests.get(url)
+    soup = BeautifulSoup(res.text, 'html.parser')
+    divs = soup.find_all(name='div', attrs={'class': 'article-item-box csdn-tracking-statistics'})
+    aas = [div.find('a') for div in divs]  # 获得包含文章链接的a标签
+    return [a.attrs.get('href') for a in aas]
 
-def vistapagearticle(link):
+def vistapagearticle(link, proxies):
     res = requests.get(
         url=link,
+        proxies=proxies
     )
 
     soup = BeautifulSoup(res.text, 'html.parser')
@@ -31,18 +40,33 @@ def vistapagearticle(link):
 
 
 if __name__ == '__main__':
-    indexurl = 'https://blog.csdn.net/BBJG_001'
-    # indexurl = 'https://blog.csdn.net/willow_zhu'
+    # indexurl = 'https://blog.csdn.net/BBJG_001'
+    indexurl = 'https://blog.csdn.net/willow_zhu'
 
     r0 = requests.get(indexurl)
     match = re.search(r'pageSize = (\d+).+\n.+listTotal = (\d+)', r0.text, flags=re.M)
     pageSize = match.group(1)   # 40
-    listTotal = match.group(2)  # 152
+    listTotal = match.group(2)
     pageend = int(listTotal) // int(pageSize) + 1   # 博客列表的最终页
+
+    iplist = []
+    with open('data/ip.txt', 'r') as f:
+        ips = json.load(f)
+        for cell in ips:
+            iplist.append(cell['address']+':'+cell['port'])
+
+
 
     for epoch in range(10):
         print('epoch:', epoch, '-------------------------')
         for i in range(1, pageend+1):
-            print( str(i), '/', pageend, 'processing . . .')
-            url = indexurl + '/article/list/' + str(i)
-            vistapagearticle(url)
+            for ip in iplist:
+                proxies = {'http': 'http' + ip, 'https': 'https' + ip}
+                print( str(i), '/', pageend, 'processing . . .')
+                url = indexurl + '/article/list/' + str(i)
+                # vistapagearticle(url, proxies)
+                try:
+                    vistapagearticle(url, proxies)
+                except:
+                    break
+

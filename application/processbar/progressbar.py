@@ -1,3 +1,4 @@
+# format    https://www.runoob.com/python/att-string-format.html
 import time
 
 # # 打印进度条
@@ -27,8 +28,11 @@ def bar(now, total):
 
 # [127 / 300]
 def bar1(now, total, prefix='progress:'):
-    print('\r'+prefix+'[ %d / %d]' % (now , total), end='')
-    # print('\r'+prefix+'[ {} / {}]'.format(now, total), end='')
+    size = len(str(total))
+    # print('\r'+prefix+'[ %d / %d]' % (now , total), end='')
+    # print('\r'+prefix+'[{} / {}]'.format(now, total), end='')
+    print('\r'+prefix+'[{:>3d} / {}]'.format(now, total), end='')
+    # https://www.runoob.com/python/att-string-format.html
 
 # [32.38%]
 def bar2(now, total, prefix='progress:'):
@@ -39,12 +43,13 @@ def bar3(now, total, length=30, prefix='progress:'):
     print('\r'+prefix+' %.2f%%\t' % (now / total * 100), end='')
     print('['+'>'*int(now/total*length)+'-'*int(length-now/total*length)+']', end='')
 
+
 if __name__ == '__main__':
     all = 198
 
     for i in range(all):  # i属于[0, total)
         # bar(i+1, all)
-        # bar1(i+1, all)
+        bar1(i+1, all)
         # bar2(i+1, all)
-        bar3(i+1, all, 60, '进度：')
-        time.sleep(0.005)   # 为了更好的观察效果，稍微延时一下
+        # bar3(i+1, all, 60, '进度：')
+        time.sleep(0.1)   # 为了更好的观察效果，稍微延时一下

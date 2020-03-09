@@ -1,11 +1,13 @@
 import requests
 
+url = 'test'
+
 r = requests.post(
     url,
     headers={},
     data={
-        'username': ,
-        'password': ,
+        'username': 'name',
+        'password': 'pwd',
     }
 )
 
