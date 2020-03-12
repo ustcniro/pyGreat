@@ -14,10 +14,6 @@ split = int(0.6*N_SAMPLES)
 x_train, x_test = x[:split], x[split:]
 y_train, y_test = y[:split], y[split:]
 
-# 测试数据
-# test_x = torch.unsqueeze(torch.linspace(-1, 1, N_SAMPLES), 1)
-# test_y = test_x + 0.3*torch.normal(torch.zeros(N_SAMPLES, 1), torch.ones(N_SAMPLES, 1))
-
 # 显示测试数据
 # plt.scatter(x_train, y_train, c='red', s=10, alpha=1, label='train')
 # plt.scatter(x_test, y_test, c='green', s=10, alpha=1, label='test')
@@ -46,7 +42,7 @@ optimizer_ofit = torch.optim.Adam(net_overfitting.parameters(), lr=0.01)
 optimizer_drop = torch.optim.Adam(net_dropped.parameters(), lr=0.01)
 loss_func = torch.nn.MSELoss()
 
-plt.ion()
+plt.ion()   # 开启pyplot的交互模式
 for t in range(500):
     pred_ofit = net_overfitting(x)
     pred_drop = net_dropped(x)
@@ -97,5 +93,5 @@ for t in range(500):
         net_overfitting.train()
         net_dropped.train()
 
-plt.ioff()
+plt.ioff()  # 关闭交互模式
 plt.show()

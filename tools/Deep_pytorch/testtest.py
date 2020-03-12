@@ -91,19 +91,23 @@ import numpy as np
 
 # print(torch.log(torch.tensor(1.)))
 
-flag = torch.cuda.is_available()
-print(flag)
-
-ngpu= 1
-# Decide which device we want to run on
-device = torch.device("cuda:0" if (torch.cuda.is_available() and ngpu > 0) else "cpu")
-print(device)
-print(torch.cuda.get_device_name(0))
-print(torch.rand(3,3).cuda())
-
+# flag = torch.cuda.is_available()
+# print(flag)
+#
+# ngpu= 1
+# # Decide which device we want to run on
+# device = torch.device("cuda:0" if (torch.cuda.is_available() and ngpu > 0) else "cpu")
+# print(device)
+# print(torch.cuda.get_device_name(0))
+# print(torch.rand(3,3).cuda())
 # True
 # cuda:0
 # GeForce GTX 1060
 # tensor([[0.5772, 0.5287, 0.0946],
 #         [0.9525, 0.7855, 0.1391],
 #         [0.6858, 0.5143, 0.8188]], device='cuda:0')
+
+def fun(x,y):
+    return x+y
+
+print(fun({3,5}))
