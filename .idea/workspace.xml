@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c673f9a-257a-4eef-b696-dfb120845d69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Basic/knowledges/t16module.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/use/ReinforceLearning/DQN/demoGymEnv/RL_DQN.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/use/ReinforceLearning/DQN/demoGymEnv/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/use/ReinforceLearning/DQN/demoGymEnv/run_CartPole.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t16dynamic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t17onGPU.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t18overfit.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/knowledges/t16module.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/knowledges/t16module.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/Deep_pytorch/data/models/ministcnn.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Deep_pytorch/data/models/ministcnn.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/Deep_pytorch/t15gan.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t15gan.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/Deep_pytorch/testtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Deep_pytorch/testtest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use/ReinforceLearning/DQN/demoGymEnv/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/use/ReinforceLearning/DQN/demoGymEnv/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/use/ReinforceLearning/DQN/demoGymEnv/run_CartPole.py" beforeDir="false" afterPath="$PROJECT_DIR$/use/ReinforceLearning/DQN/demoGymEnv/run_CartPole.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +59,8 @@
       <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\tools" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.run_CartPole">
-    <configuration name="run_CartPole" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.t18overfit">
+    <configuration name="t15gan" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyGreat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -63,11 +68,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/use/ReinforceLearning/DQN/demoGymEnv" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools/Deep_pytorch" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/use/ReinforceLearning/DQN/demoGymEnv/run_CartPole.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/Deep_pytorch/t15gan.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -76,7 +81,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="t01LableButton" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="t17onGPU" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyGreat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -84,11 +89,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools/tkintertk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools/Deep_pytorch" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/tkintertk/t01LableButton.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/Deep_pytorch/t17onGPU.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +102,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="t02EntryText" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="t18overfit" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyGreat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -105,11 +110,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools/tkintertk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools/Deep_pytorch" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/tkintertk/t02EntryText.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/Deep_pytorch/t18overfit.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -118,7 +123,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="t03Listbox" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="testtest" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyGreat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -126,11 +131,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools/tkintertk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools/Deep_pytorch" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/tkintertk/t03Listbox.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/Deep_pytorch/testtest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="tk8canvas" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="tt02testvisitv1_" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyGreat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -147,11 +152,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools/tkintertk" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Basic/pachong" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/tkintertk/tk8canvas.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/pachong/tt02testvisitv1_.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.run_CartPole" />
-        <item itemvalue="Python.t03Listbox" />
-        <item itemvalue="Python.t02EntryText" />
-        <item itemvalue="Python.t01LableButton" />
-        <item itemvalue="Python.tk8canvas" />
+        <item itemvalue="Python.t18overfit" />
+        <item itemvalue="Python.testtest" />
+        <item itemvalue="Python.t17onGPU" />
+        <item itemvalue="Python.tt02testvisitv1_" />
+        <item itemvalue="Python.t15gan" />
       </list>
     </recent_temporary>
   </component>
@@ -211,22 +216,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="754" y="152" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583977677676" />
-    <state width="1515" height="262" key="GridCell.Tab.0.bottom" timestamp="1583991716169">
+    <state width="1515" height="246" key="GridCell.Tab.0.bottom" timestamp="1584007143110">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="262" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583991716169" />
-    <state width="1515" height="262" key="GridCell.Tab.0.center" timestamp="1583991716169">
+    <state width="1515" height="246" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584007143110" />
+    <state width="1515" height="246" key="GridCell.Tab.0.center" timestamp="1584007143109">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="262" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583991716169" />
-    <state width="1515" height="262" key="GridCell.Tab.0.left" timestamp="1583991716168">
+    <state width="1515" height="246" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584007143109" />
+    <state width="1515" height="246" key="GridCell.Tab.0.left" timestamp="1584007143109">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="262" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583991716168" />
-    <state width="1515" height="262" key="GridCell.Tab.0.right" timestamp="1583991716169">
+    <state width="1515" height="246" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584007143109" />
+    <state width="1515" height="246" key="GridCell.Tab.0.right" timestamp="1584007143110">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="262" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583991716169" />
+    <state width="1515" height="246" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584007143110" />
     <state width="1515" height="102" key="GridCell.Tab.1.bottom" timestamp="1583423818786">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

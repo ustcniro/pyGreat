@@ -1,5 +1,5 @@
 import gym
-from RL_DQN import DQN
+from RL_DQN import DQN  # 这是我自己写的一个DQN网络
 
 env = gym.make('CartPole-v0')   # 获得gym环境
 env = env.unwrapped

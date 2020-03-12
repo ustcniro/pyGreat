@@ -3,7 +3,7 @@ import torch.nn as nn
 import numpy as np
 import matplotlib.pyplot as plt
 
-torch.manual_seed(1)    # reproducible
+torch.manual_seed(1)
 np.random.seed(1)
 
 # 超参数
@@ -21,22 +21,16 @@ def artist_works():     # 供评价网络学习的优秀作品
     paintings = torch.from_numpy(paintings).float()     # 转换成tensor
     return paintings
 
-# show our beautiful painting range
-# plt.plot(PAINT_POINTS[0], 2 * np.power(PAINT_POINTS[0], 2) + 1, c='#74BCFF', lw=3, label='upper bound')
-# plt.plot(PAINT_POINTS[0], 1 * np.power(PAINT_POINTS[0], 2) + 0, c='#FF9359', lw=3, label='lower bound')
-# plt.legend(loc='upper right')
-# plt.show()
-
 # 构造生成网络
-G = nn.Sequential(                      # Generator
-    nn.Linear(N_IDEAS, 128),            # random ideas (could from normal distribution)
+G = nn.Sequential(                      # 生成器
+    nn.Linear(N_IDEAS, 128),            # 随机灵感（可以按正态分布取值）
     nn.ReLU(),
-    nn.Linear(128, ART_COMPONENTS),     # making a painting from these random ideas
+    nn.Linear(128, ART_COMPONENTS),     # 根据随机灵感进行创作
 )
 
 # 构造评价网络
-D = nn.Sequential(                      # Discriminator
-    nn.Linear(ART_COMPONENTS, 128),     # receive art work either from the famous artist or a newbie like G
+D = nn.Sequential(                      # 评价器
+    nn.Linear(ART_COMPONENTS, 128),     # 接收一件作品（来自大师或者上面的生成网络）
     nn.ReLU(),
     nn.Linear(128, 1),
     nn.Sigmoid(),                       # 返回生成网络的作品跟优秀作品的相似度(0,1)，或者说是评价输入是优秀作品的概率
@@ -58,12 +52,14 @@ for step in range(10000):
 
     # 计算损失
     D_loss = - torch.mean(torch.log(prob_artist0) + torch.log(torch.tensor(1.) - prob_artist1))
+    # 让评价器去批判生成器，你的生成作品离1很远，生成器就会更加趋向1的去生成作品
     G_loss = torch.mean(torch.log(torch.tensor(1.) - prob_artist1))
+    # 让评价器把优秀作品的评价结果趋近于1
 
     # 清空梯度
     opt_D.zero_grad()
     # 反向传递
-    D_loss.backward(retain_graph=True)      # retain_graph 这个参数是为了再次使用计算图纸
+    D_loss.backward(retain_graph=True)      # retain_graph 这个参数是为了再次使用中间变量
     # 执行优化
     opt_D.step()
 
