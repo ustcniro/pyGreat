@@ -30,8 +30,9 @@ def vistapagearticles(link):
 
 
 if __name__ == '__main__':
-    indexurl = 'https://blog.csdn.net/BBJG_001'
+    # indexurl = 'https://blog.csdn.net/BBJG_001'
     # indexurl = 'https://blog.csdn.net/willow_zhu'
+    indexurl = 'https://blog.csdn.net/komorebi6'
 
     r0 = requests.get(indexurl)
     match = re.search(r'pageSize = (\d+).+\n.+listTotal = (\d+)', r0.text, flags=re.M)
@@ -40,7 +41,7 @@ if __name__ == '__main__':
     pageend = listTotal // pageSize + 1  # 博客列表的最终页
     timegsp = 60 - 0.5 * listTotal if listTotal < 120 else 0
 
-    for epoch in range(10):
+    for epoch in range(100):
         print('epoch:', epoch+1, '-------------------------')
         for i in range(1, pageend + 1):
             print('Page', str(i), '/', pageend, 'processing . . .')

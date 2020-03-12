@@ -28,5 +28,4 @@ b = tk.Button(window, text='hit me', width=15, height=2, command=hit_me)    # co
 # 如果有参数的话，通过args属性指定，如 args=(3,5)
 b.pack()    # 放置Button
 
-
 window.mainloop()   # 就是一个循环，不停的刷新串口页面

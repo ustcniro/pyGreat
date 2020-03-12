@@ -58,19 +58,13 @@ print(bytes('汉字aa3', 'utf-8'))  # b'\xe6\xb1\x89\xe5\xad\x97aa3'
 print(callable(0))  # False
 print(callable('asd123'))  # False
 
-
 def add(a, b):
     return a + b
-
-
 print(callable(add))  # True
-
 
 class A:  # 类
     def method(self):
         return 0
-
-
 print(callable(A))  # True
 a = A()
 print(callable(a))  # False
@@ -127,7 +121,6 @@ print(complex(1, 2))
 class Coordinate:
     x = 10
     y = -5
-
 
 point1 = Coordinate()
 print('x = ', point1.x)
@@ -194,13 +187,10 @@ print(eval('pow(2, 8)'))  # 256
 # 单行语句字符串
 exec('print("Hello World")')  # Hello World
 exec("print ('runoob.com')")  # runoob.com
-
 #  多行语句字符串
 exec("""for i in range(3):
      print ("testnum: %d" % i)
 """)
-
-
 # testnum: 0
 # testnum: 1
 # testnum: 2
@@ -223,8 +213,8 @@ print(list(filter(is_odd, [1, 2, 3, 4, 5, 6, 7])))
 print(float(12))  # 12.0
 print(float(12.3613))  # 12.3613
 
-# 基本语法是通过 {} 和 : 来代替以前的 %
 # format 函数可以接受不限个参数，位置可以不按顺序
+# 基本语法是通过 {} 和 : 来代替以前的 %
 # 不设置指定位置，按默认顺序
 print("{} {}".format("hello", "world"))  # hello world
 # 设置指定位置

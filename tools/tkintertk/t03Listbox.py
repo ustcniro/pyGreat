@@ -10,7 +10,8 @@ l = tk.Label(window, bg='yellow', width=4, textvariable=var1)
 l.pack()
 
 def print_selection():
-    value = lb.get('active')   # 获得光标处的值原get（lb.curselection()这个在一开始没有光标定位时会报错）.lb.get('avtive')也行，这个一开始默认光标定位在第一项
+    value = lb.get('active')    # 获得光标处的值原get（lb.curselection()这个在一开始没有光标定位时会报错）
+    # lb.get('active')也行，这个一开始默认光标定位在第一项
     var1.set(value)
 
 b = tk.Button(window, text='print selection', width=15, height=2, command=print_selection)
