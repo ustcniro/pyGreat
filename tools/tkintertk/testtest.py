@@ -4,11 +4,11 @@ window = tk.Tk(screenName='1', baseName='2')       # 声明一个窗口
 # window.title('my window')   # 设置名称
 window.geometry('400x200')  # 设置窗口尺寸
 
-canvas = tk.Canvas(window, bg='blue', height=100, width=200)
-x0, y0, x1, y1 = 50, 50, 80, 80
-line = canvas.create_line(x0, y0, x1, y1)   # yi根黑线
-# line.pack()
-canvas.pack()
+# canvas = tk.Canvas(window, bg='blue', height=100, width=200)
+# x0, y0, x1, y1 = 50, 50, 80, 80
+# line = canvas.create_line(x0, y0, x1, y1)   # yi根黑线
+# # line.pack()
+# canvas.pack()
 
 # var = tk.StringVar()
 # # l = tk.Label(window, text='OMG, this is TK', bg='green', font=('Arial', 12), width=15, height=2)
@@ -34,5 +34,16 @@ canvas.pack()
 # # 如果有参数的话，通过args属性指定，如 args=(3,5)
 # b.pack()    # 放置Button
 
+# 创建一个菜单栏（最上方的菜单栏横条）
+menubar = tk.Menu(window)
 
+
+# 定义一个空菜单单元
+filemenu = tk.Menu(menubar, tearoff=0)
+
+# 将上面定义的空菜单命名为File，放在菜单栏中，就是装入那个容器中
+menubar.add_cascade(label='File', menu=filemenu)
+
+
+window.config(menu=menubar)
 window.mainloop()   # 就是一个循环，不停的刷新串口页面
