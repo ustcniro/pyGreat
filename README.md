@@ -1,6 +1,7 @@
 # pyGreat
-my python study notes
-idclude
+My python study notes
+
+Which idclude
 - Python basics
 - numpy
 - pandas
