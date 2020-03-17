@@ -1,3 +1,6 @@
+# mp.Value()是共享内存
+# mp.Manager().Value()是共享数据（不通过共享内存的方式）
+# 前者速度更快，后者更灵活（支持的类型更多）
 import multiprocessing as mp
 
 def job(v, n):
@@ -7,6 +10,7 @@ def job(v, n):
 if __name__ == '__main__':
     array = mp.Array('i', [1, 2, 3])
     value = mp.Value('d', 1)
+    # cdtype https://www.docs4dev.com/docs/zh/python/3.7.2rc1/all/library-array.html#module-array
     num = 10
     print(array[:])
 

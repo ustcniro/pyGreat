@@ -3,9 +3,6 @@
 import requests
 from bs4 import BeautifulSoup  # 解析html网页的
 import re
-import multiprocessing as mp
-from multiprocessing import Manager
-import time
 
 def getAllUrls(url):
     r0 = requests.get(url)
@@ -52,7 +49,10 @@ if __name__ == '__main__':
     for i in range(10):
         # ts = time.time()
         for j, u in enumerate(urls):
-            res = requests.get(u)
+            try:
+                res = requests.get(u)
+            except:
+                continue
             print('\r[{} / {}]'.format(j+1, u_total), end='' )
         print()
         # te = time.time()

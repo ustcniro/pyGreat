@@ -5,10 +5,10 @@ import time
 class Maze():
     def __init__(self):
         super(Maze, self).__init__()
-        self.observatin_space = [(x, y) for x in range(1, 5) for y in range(1, 5)]
+        self.observation_space = [(x, y) for x in range(1, 5) for y in range(1, 5)]
         self.action_space = range(4)
         self.n_actions = len(self.action_space)
-        self.n_features = np.array(self.observatin_space).shape[-1]
+        self.n_features = np.array(self.observation_space).shape[-1]
         self.target = {(4, 2): 10}  # 安全/目标状态
         self.danger = {(2, 2): -20, (3, 3): -20}  # 危险状态
         self.state = None
@@ -19,7 +19,7 @@ class Maze():
     def reset(self, startstate=None):   # 重置初始状态
         self.canvas.delete('all')       # 操作之前清空画布，否则每步的状态将都会堆在画面上
         if startstate == None:          # 如果不指定起始状态，随机生成一个状态
-            self.state = self.observatin_space[np.random.choice(range(len(self.observatin_space)))]
+            self.state = self.observation_space[np.random.choice(range(len(self.observation_space)))]
         else:   # 如果指定了初始状态，就初始化为指定状态
             self.state = startstate
         self.counts = 0
@@ -47,7 +47,7 @@ class Maze():
 
         # 判断下一个状态是否属于状态空间，如果在状态空间中更新当前状态，如果不在状态空间保持当前状态
         next_state = (x, y)
-        self.state = next_state if next_state in self.observatin_space else self.state
+        self.state = next_state if next_state in self.observation_space else self.state
 
         self.counts += 1
 

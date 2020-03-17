@@ -2,7 +2,7 @@
 import torch
 import torch.nn as nn
 import numpy as np
-from gymTest.mazeEnv import Maze    # 这是一个我自己写的环境
+from mazeEnv import Maze    # 这是一个我自己写的环境
 
 class DQN():
     def __init__(self,

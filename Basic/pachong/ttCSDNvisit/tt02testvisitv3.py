@@ -50,7 +50,7 @@ if __name__ == '__main__':
     pageend = int(listTotal) // int(pageSize) + 1   # 博客列表的最终页
 
     iplist = []
-    with open('data/ip.txt', 'r') as f:
+    with open('../data/ip.txt', 'r') as f:
         ips = json.load(f)
         for cell in ips:
             iplist.append(cell['address']+':'+cell['port'])
