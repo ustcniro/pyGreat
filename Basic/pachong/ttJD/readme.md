@@ -52,5 +52,8 @@
 >
 >[python PIL/cv2/base64相互转换](https://blog.csdn.net/haveanybody/article/details/86494063)
 >
+>抢购 https://cloud.tencent.com/developer/article/1565598
+>
+>抢购 https://www.hotbak.net/key/python%E4%BA%AC%E4%B8%9C%E7%A7%92%E6%9D%80%E8%84%9A%E6%9C%AC.html
 
 

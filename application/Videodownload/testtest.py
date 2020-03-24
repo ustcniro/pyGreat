@@ -1,8 +1,8 @@
 from application.Videodownload.getVideo import *
 
 if __name__ == '__main__':
-    url = 'https://www.bilibili.com/video/av39240017?from=search&seid=13275619882014314126'
-    path = r'E:\Test\others2'
+    url = 'http://www.wodedy.net/play/145-0-1.html'
+    path = r'E:\Test\JYZJ\over'
 
     checkenv()
     download(url, path)

@@ -1,5 +1,6 @@
 import torch
 import numpy as np
+from tools.Deep_pytorch.t06modelsave import Net
 
 # print(torch.linspace(-5,5,9).unsqueeze(1))
 
@@ -107,7 +108,15 @@ import numpy as np
 #         [0.9525, 0.7855, 0.1391],
 #         [0.6858, 0.5143, 0.8188]], device='cuda:0')
 
-def fun(x,y):
-    return x+y
+# def fun(x,y):
+#     return x+y
+#
+# print(fun({3,5}))
 
-print(fun({3,5}))
+x = torch.tensor([[1,1], [2,2], [3,5], [-1,-4]]).type(torch.float)
+
+net2=torch.load('data/models/classnet.pkl')
+res = net2(x)
+print(res)
+prediction2 = torch.max(res, 1)
+print(prediction2)

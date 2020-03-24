@@ -1,28 +1,31 @@
 import base64
+import datetime
 import cv2
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from bs4 import BeautifulSoup
-from Basic.pachong.ttslidervalida.Easing import *
+from Easing import *
+import numpy as np
 import time
 
 
+
 class OptJD:
-    def __init__(self, username, password):
+    def __init__(self, username='178', password='z'):
         self.uname = username
         self.upwd = password
 
-        self.dirver = webdriver.Chrome(
+        self.driver = webdriver.Chrome(
             executable_path=r'D:\Anaconda3\envs\others\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe')
         self.url_login = 'https://passport.jd.com/new/login.aspx'
 
 
     def login(self):
-        self.dirver.get(self.url_login)
-        self.dirver.find_element_by_link_text("账户登录").click()
-        self.dirver.find_element_by_name("loginname").send_keys(self.uname)
-        self.dirver.find_element_by_name("nloginpwd").send_keys(self.upwd)
-        self.dirver.find_element_by_id("loginsubmit").click()
+        self.driver.get(self.url_login)
+        self.driver.find_element_by_link_text("账户登录").click()
+        self.driver.find_element_by_name("loginname").send_keys(self.uname)
+        self.driver.find_element_by_name("nloginpwd").send_keys(self.upwd)
+        self.driver.find_element_by_id("loginsubmit").click()
         while True:
             # 获取滑块图片的cv2对象
             big, small = self.get_slider_imgs()
@@ -39,7 +42,7 @@ class OptJD:
         :return: 返回两个图片的cv2对象
         '''
         # 将网页源码转化为能被解析的lxml格式
-        soup = BeautifulSoup(self.dirver.page_source, 'lxml')
+        soup = BeautifulSoup(self.driver.page_source, 'lxml')
         imgs = soup.find('div', {'class': 'JDJRV-img-wrap'}).find_all('img')
         srcs = [im.attrs.get('src') for im in imgs]
         b64s = [src.split(',')[-1] for src in srcs]  # 图片是以base64直接出现在html源码中的
@@ -77,27 +80,62 @@ class OptJD:
 
     def move_to_gap(self, track):
         # 得到滑块标签
-        slider = self.dirver.find_element_by_class_name('JDJRV-slide-btn')
+        slider = self.driver.find_element_by_class_name('JDJRV-slide-btn')
         # 使用click_and_hold()方法悬停在滑块上，perform()方法用于执行
-        ActionChains(self.dirver).click_and_hold(slider).perform()
+        ActionChains(self.driver).click_and_hold(slider).perform()
         for x in track:
             # 使用move_by_offset()方法拖动滑块，perform()方法用于执行
-            ActionChains(self.dirver).move_by_offset(xoffset=x, yoffset=0).perform()
+            ActionChains(self.driver).move_by_offset(xoffset=x, yoffset=0).perform()
         # 模拟人类对准时间
         time.sleep(1)
         # 释放滑块
-        ActionChains(self.dirver).release().perform()
+        ActionChains(self.driver).release().perform()
         time.sleep(2)
         try:
-            car = self.dirver.find_element_by_link_text('我的购物车')
+            car = self.driver.find_element_by_link_text('我的购物车')
             return True  # 如果上面顺利找到了，说明登录成功
         except:
             return False
 
+    def join_car(self):
+        # nowwhandle = self.driver.current_window_handle  # 获取当前窗口
+        self.driver.find_element_by_link_text('我的购物车').click()  # 购物车会新打开一个页面
+        # allhandles = self.driver.window_handles     # 获取所有窗口
+        # for handle in allhandles:
+        #     if handle != nowwhandle:    # 新开的浏览器，除了刚才登陆操作的那一个，就是购物车的这一个
+        #         self.driver.switch_to.window(handle)  # 切换至窗口 购物车页面
+        self.driver.get("https://cart.jd.com/cart.action")  # # 切换至窗口 购物车页面
+        self.driver.find_element_by_link_text('去结算').click()
+        now = datetime.datetime.now()
+        print('login success:', now.strftime('%Y-%m-%d %H:%M:%S'))
+
+    def buy_on_time(self, buytime):
+        while True:
+            if time.time()>=time.mktime(time.strptime(buytime, "%Y-%m-%d %H:%M:%S")):
+                if time.time()-time.mktime(time.strptime(buytime, "%Y-%m-%d %H:%M:%S"))>30: # 30s后退出
+                    print('may be false...')
+                    break
+                try:
+                    try:
+                        # print(time.time(), 'find 支付')
+                        self.driver.find_element_by_link_text('立即支付')
+                        print('may be success~')
+                        break
+                    except:
+                        pass
+                    # print(time.time(), 'find 提交')
+                    self.driver.find_element_by_id('order-submit').click()  # 提交订单
+                except:
+                    # time.sleep(0.1)
+                    pass
+
+            time.sleep(0.5)
+
+def dosomething():
+    obj = OptJD()
+    obj.login()
+    obj.join_car()
+    obj.buy_on_time('2020-03-17 12:54:00')
 
 if __name__ == '__main__':
-    uname = '17852847713'
-    upwd = 'z19950513y'
-
-    obj = OptJD(uname, upwd)
-    obj.login()
+    dosomething()

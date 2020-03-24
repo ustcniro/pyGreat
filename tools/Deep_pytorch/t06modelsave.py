@@ -55,6 +55,7 @@ if __name__ == '__main__':
 
     torch.save(net, 'data/models/classnet.pkl')     # 保存整个网络（结构+参数）
     torch.save(net.state_dict(), 'data/models/classnet_params.pkl')  # 只保存网络中的参数 (速度快, 占内存少)
+    print('-----------------\n',net.state_dict())
 
     net2=torch.load('data/models/classnet.pkl')
 
