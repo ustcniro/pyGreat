@@ -4,21 +4,18 @@ import cv2
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from bs4 import BeautifulSoup
-from Easing import *
+from Basic.pachong.ttJD.Easing import *
 import numpy as np
 import time
 
-
-
 class OptJD:
-    def __init__(self, username='178', password='z'):
+    def __init__(self, username='username', password='password'):
         self.uname = username
         self.upwd = password
 
         self.driver = webdriver.Chrome(
             executable_path=r'D:\Anaconda3\envs\others\Lib\site-packages\selenium\webdriver\chrome\chromedriver.exe')
         self.url_login = 'https://passport.jd.com/new/login.aspx'
-
 
     def login(self):
         self.driver.get(self.url_login)
@@ -97,7 +94,7 @@ class OptJD:
         except:
             return False
 
-    def join_car(self):
+    def to_car(self):
         # nowwhandle = self.driver.current_window_handle  # 获取当前窗口
         self.driver.find_element_by_link_text('我的购物车').click()  # 购物车会新打开一个页面
         # allhandles = self.driver.window_handles     # 获取所有窗口
@@ -110,9 +107,10 @@ class OptJD:
         print('login success:', now.strftime('%Y-%m-%d %H:%M:%S'))
 
     def buy_on_time(self, buytime):
+        buytime = time.mktime(time.strptime(buytime, "%Y-%m-%d %H:%M:%S"))
         while True:
-            if time.time()>=time.mktime(time.strptime(buytime, "%Y-%m-%d %H:%M:%S")):
-                if time.time()-time.mktime(time.strptime(buytime, "%Y-%m-%d %H:%M:%S"))>30: # 30s后退出
+            if time.time()>=buytime:
+                if time.time()-buytime>30: # 30s后退出
                     print('may be false...')
                     break
                 try:
@@ -132,10 +130,18 @@ class OptJD:
             time.sleep(0.5)
 
 def dosomething():
-    obj = OptJD()
+    obj = OptJD(username='uname', password='pwd')
     obj.login()
-    obj.join_car()
+    obj.to_car()
     obj.buy_on_time('2020-03-17 12:54:00')
 
 if __name__ == '__main__':
     dosomething()
+
+# 使用说明
+# 先别动程序，一面坏了下面几行的索引
+# 17行：这是一个谷歌浏览器的驱动，路径指定为驱动物理地址
+# 133行：设置用户名和密码
+# 136行：抢购的时间点
+# 准备工作：要抢的商品加入购物车；设置到选中状态；这个程序就夸夸的点 提交订单 按钮
+# 提前运行程序，处于登陆状态等着，因为登陆那块不能保证100%一次成功

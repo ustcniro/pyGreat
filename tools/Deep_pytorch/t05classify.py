@@ -96,6 +96,7 @@ if __name__ == '__main__':
             plt.pause(0.1)
 
     torch.save(net, 'data/models/classnet.pkl')
+    torch.save(net.state_dict(), 'data/models/classnet_params.pkl')
 
     net2=torch.load('data/models/classnet.pkl')
     print(net2(torch.tensor([2.,2.])))

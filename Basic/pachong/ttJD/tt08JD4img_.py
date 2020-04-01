@@ -96,7 +96,7 @@ def get_track2(distance):
   :return: (List)移动轨迹
   '''
 
-    # 创建存放轨迹信息的列表
+    # 创建存放轨迹信息的列表f
     trace = []
     # 设置加速的距离
     faster_distance = distance * (3 / 4)

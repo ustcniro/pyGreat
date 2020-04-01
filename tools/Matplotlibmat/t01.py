@@ -108,6 +108,10 @@ plt.legend(loc='upper right')
 
 # 显示网格
 plt.grid(True)
+# ax.grid(False)    # 不显示网格
+# ax.axis('off')    # 隐藏坐标轴
+#
+# ax.view_init(0, 300)    # 设置三维图初始显示角度，两个旋转轴，水平平面和竖直平面内旋转
 
 # 保存图片
 plt.savefig('data/demo.png')

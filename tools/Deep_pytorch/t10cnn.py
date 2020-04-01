@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.utils.data as Data
 import torchvision  # 数据库模块
+from tensorboardX import SummaryWriter  # 可视化
 import os
 import time
 
@@ -94,6 +95,9 @@ CNN(
 )
 '''
 
+with SummaryWriter(comment='Net') as w:  # 可视化
+    w.add_graph(cnn, (test_x,))  # 没错，就是这么写，加一个逗号
+
 optimizer = torch.optim.Adam(cnn.parameters(), lr=LR)  # 优化器，传入所有参数
 loss_func = nn.CrossEntropyLoss()  # 损失函数
 if __name__ == '__main__':
@@ -126,6 +130,8 @@ if __name__ == '__main__':
     # 可以不必有这保存提取的过程，只是为了全一下流程
     # 训练结束后保存模型
     torch.save(cnn, r'data/models/ministcnn.pkl')
+    torch.save(cnn.state_dict(), 'data/models/ministcnn_params.pkl')
+
     # 提取模型测试模型
     cnn2 = torch.load(r'data/models/ministcnn.pkl')
 

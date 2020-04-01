@@ -1,0 +1,11 @@
+// 添加到源码第一行的注释
+digraph Graphtest {
+	graph [rankdir=TB]
+	node [color=black fontcolor=black fontname=FangSong fontsize=12 shape=rhombus style=rounded]
+	edge [color="#999999" fontcolor="#888888" fontname=FangSong fontsize=10]
+	A [label="实现单智能体在楼层内任意位置顺利逃生" color=blue fontcolor=blue]
+	B [label="实现多智能体协同有序逃生"]
+	C [label="融合到可视化系统中"]
+	A -> B
+	B -> C
+}

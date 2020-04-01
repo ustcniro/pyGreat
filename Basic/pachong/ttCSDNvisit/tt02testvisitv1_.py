@@ -3,6 +3,7 @@
 import requests
 from bs4 import BeautifulSoup  # 解析html网页的
 import re
+import time
 
 def getAllUrls(url):
     r0 = requests.get(url)
@@ -59,5 +60,6 @@ if __name__ == '__main__':
         # print('单轮耗时：', te-ts)
 
         readnume = getPageView(indexurl)
+        print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         print('当前访问：', readnume)
         print('访问增加：', readnume-readnums)
