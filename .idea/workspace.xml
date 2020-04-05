@@ -2,65 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c673f9a-257a-4eef-b696-dfb120845d69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Basic/dataStructure/structure/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/knowledges/t00bool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/knowledges/t00int.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/knowledges/t00str.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/pachong/ttCSDNvisit/testtest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Basic/pachong/ttTaobao/t10scrapy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test/test001/t02test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/ctrlmobile/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/ctrlmobile/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/ctrlmobile/t01test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/ctrlmobile/t02test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/ctrlmobile/t02testtest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/ctrlmobile/t03test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/ctrlmobile/t04test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/application/ctrlmobile/testtest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t20print.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t21view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t22cross_entropy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t23tensorboardX.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Matplotlibmat/t17prism.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Matplotlibmat/tttest/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Matplotlibmat/tttest/t02test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Matplotlibmat/tttest/t02test_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Matplotlibmat/tttest/t02test__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Matplotlibmat/tttest/t03test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Matplotlibmat/tttest/t04test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Matplotlibmat/tttest/t07grid.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Matplotlibmat/tttest/testtest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Matplotlibmat/tttest/tt05test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/Matplotlibmat/tttest/tt06prism.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/PyOpenGLpy/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/PyOpenGLpy/testtest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/PyOpenGLpy/tt01test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/numpynumpy/t11print.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/numpynumpy/t12copyexent.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/knowledges/t00dict.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/knowledges/t00list.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/knowledges/t00set.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Basic/knowledges/t00tuple.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/getzhihu/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/getzhihu/t01test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/getzhihu/t02test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/getzhihu/t03test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/getzhihu/testtest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/application/pdftranslate/testtest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/dataStructure/t01signallinklist.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/dataStructure/structure/t01signallinklist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/dataStructure/t02doublelinklist.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/dataStructure/structure/t02doublelinklist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/dataStructure/t03signalcyclelinklist.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/dataStructure/structure/t03signalcyclelinklist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/dataStructure/t04stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/dataStructure/structure/t04stack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/dataStructure/t05queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/dataStructure/structure/t05queue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/dataStructure/t06dequeue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/dataStructure/structure/t06dequeue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/dataStructure/t07binarytree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/dataStructure/structure/t07binarytree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/pachong/t08Asyncio_.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/pachong/t09selenium.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/pachong/t09selenium.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/pachong/ttCSDNvisit/tt02testvisitv1_.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/pachong/ttCSDNvisit/tt02testvisitv1_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/pachong/ttJD/tt08JD4img_.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/pachong/ttJD/tt08JD4img_.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Basic/pachong/ttJD/ttJD.py" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/pachong/ttJD/ttJD.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/Deep_pytorch/data/models/classnet.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Deep_pytorch/data/models/classnet.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/Deep_pytorch/data/models/classnet_params.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Deep_pytorch/data/models/classnet_params.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/Deep_pytorch/data/models/ministcnn.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Deep_pytorch/data/models/ministcnn.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/Deep_pytorch/t05classify.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t05classify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/Deep_pytorch/t10cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Deep_pytorch/t10cnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/Matplotlibmat/t01.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/Matplotlibmat/t01.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/graphvizgp/Digraph.gv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/graphvizgp/Digraph.gv.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Basic/pachong/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/Basic/pachong/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/ctrlmobile/t02test.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/ctrlmobile/t02test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/ctrlmobile/ui.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/ctrlmobile/ui.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/pdftranslate/package1/translate.py" beforeDir="false" afterPath="$PROJECT_DIR$/application/pdftranslate/package1/translate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/graphvizgp/Graphtest.gv" beforeDir="false" afterPath="$PROJECT_DIR$/tools/graphvizgp/Graphtest.gv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/graphvizgp/Graphtest.gv.png" beforeDir="false" afterPath="$PROJECT_DIR$/tools/graphvizgp/Graphtest.gv.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/graphvizgp/t01test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/graphvizgp/t01test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/graphvizgp/test-table.gv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/graphvizgp/会议报名购票流程图.gv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,8 +68,8 @@
       <recent name="E:\Workplace\Workplace_Python\wp_project\pyGreat\Basic\pachong\ttCSDNvisit" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.t10cnn">
-    <configuration name="t02test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.t03test">
+    <configuration name="t02test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyGreat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -117,11 +77,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/application/ctrlmobile" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/application/getzhihu" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/application/ctrlmobile/t02test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/application/getzhihu/t02test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -130,7 +90,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="t05classify" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="t03test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyGreat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,11 +98,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools/Deep_pytorch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/application/getzhihu" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/Deep_pytorch/t05classify.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/application/getzhihu/t03test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,7 +111,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="t10cnn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="testtest (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="pyGreat" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -159,32 +119,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools/Deep_pytorch" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/application/pdftranslate" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/Deep_pytorch/t10cnn.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="t23tensorboardX" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="pyGreat" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tools/Deep_pytorch" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/Deep_pytorch/t23tensorboardX.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/application/pdftranslate/testtest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -201,11 +140,32 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Basic/pachong/ttCSDNvisit" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/application/getzhihu" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Basic/pachong/ttCSDNvisit/testtest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/application/getzhihu/testtest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="translate" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="pyGreat" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/application/pdftranslate/package1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/application/pdftranslate/package1/translate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -216,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.t10cnn" />
-        <item itemvalue="Python.t23tensorboardX" />
-        <item itemvalue="Python.t02test (1)" />
-        <item itemvalue="Python.t05classify" />
+        <item itemvalue="Python.t03test" />
+        <item itemvalue="Python.t02test" />
         <item itemvalue="Python.testtest" />
+        <item itemvalue="Python.translate" />
+        <item itemvalue="Python.testtest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -269,22 +229,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="754" y="152" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585494803041" />
-    <state width="1515" height="267" key="GridCell.Tab.0.bottom" timestamp="1585719115376">
+    <state width="1515" height="190" key="GridCell.Tab.0.bottom" timestamp="1586051264664">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="267" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1585719115376" />
-    <state width="1515" height="267" key="GridCell.Tab.0.center" timestamp="1585719115371">
+    <state width="1515" height="190" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586051264664" />
+    <state width="1515" height="190" key="GridCell.Tab.0.center" timestamp="1586051264663">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="267" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1585719115371" />
-    <state width="1515" height="267" key="GridCell.Tab.0.left" timestamp="1585719115367">
+    <state width="1515" height="190" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586051264663" />
+    <state width="1515" height="190" key="GridCell.Tab.0.left" timestamp="1586051264661">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="267" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1585719115367" />
-    <state width="1515" height="267" key="GridCell.Tab.0.right" timestamp="1585719115374">
+    <state width="1515" height="190" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586051264661" />
+    <state width="1515" height="190" key="GridCell.Tab.0.right" timestamp="1586051264664">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="267" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1585719115374" />
+    <state width="1515" height="190" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586051264664" />
     <state width="1515" height="102" key="GridCell.Tab.1.bottom" timestamp="1583423818786">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -313,9 +273,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="510" y="54" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1584370250507" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585066011000">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1585879905136">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585066011000" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1585879905136" />
   </component>
 </project>

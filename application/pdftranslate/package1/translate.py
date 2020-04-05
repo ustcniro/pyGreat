@@ -6,6 +6,7 @@ import requests
 from concurrent import futures
 from io import StringIO
 
+
 from pdfminer.pdfinterp import PDFResourceManager
 from pdfminer.pdfpage import PDFPage
 # https://gist.github.com/jmcarp/7105045
@@ -117,6 +118,7 @@ def _main(pdf_path, txt_path):
     # zh_txt = [translate(txt) for txt in data_list]
     zh_txt = list(zh_txt)
     article = '\n\n'.join(zh_txt)
+    article = article.replace('这一部分翻译错误\n\n', '')
     print(article)
     with open(txt_path, 'w', encoding='utf-8') as f:
         f.write(article)
@@ -127,7 +129,7 @@ def _main(pdf_path, txt_path):
 if __name__ == '__main__':
     # appid = XXXX  # 填入你的 appid ，为int类型
     # key = XXXX  # 填入你的 key ，为str类型
-    doc_in = r'E:\ZYD\temporary\DesktopMirror\新建文件夹\20191126\paper\1124\Improved Multi-Agent Reinforcement Learning.pdf'
+    doc_in = r'E:\ZYD\temporary\DesktopMirror\ReinforcementLearning\20200404\References\DuelingDQN.pdf'
     doc_out = doc_in.split('.')[0]+'.txt'
     # print(doc_out)
     _main(doc_in, doc_out)  # 填入 pdf 路径与翻译完毕之后的 txt 路径
