@@ -1,5 +1,8 @@
 # pyGreat
-My python study notes
+
+download from other's work 
+
+python study notes
 
 Which idclude
 - Python basics
